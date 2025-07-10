@@ -618,6 +618,7 @@ const App = () => {
           <h2 className="text-4xl font-bold text-center mb-5 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Certifications
           </h2>
+
           <p className="text-xl font-bold text-center text-purple-300  mb-16">
             I believe in continuous learning. Here are some of the certifications I've earned throughout my career.
           </p>
