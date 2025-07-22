@@ -309,7 +309,7 @@ const App = () => {
                 className="inline-block mb-2 px-4 py-1 rounded-full bg-blue-900/50 text-blue-300 text-sm font-medium"
                 variants={itemVariants}
               >
-                Full Stack Developer
+                Mern Stack Developer
               </motion.span>
 
               <motion.h1
@@ -330,7 +330,7 @@ const App = () => {
                       'Frontend Developer',
                       'React Specialist',
                       'Backend Developer',
-                      'Full Stack Developer',
+                      'Mern Stack Developer',
                       'Problem Solver'
                     ]}
                     loop={0}
@@ -432,9 +432,9 @@ const App = () => {
             >
               <div className="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-500">
                 <img
-                  src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="/pic2.jpg"
                   alt="Adarsh bhagat working on laptop"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover object-center"
                 />
               </div>
 
@@ -463,7 +463,7 @@ const App = () => {
               </h3>
 
               <p className="text-gray-300 mb-6">
-                I'm a full-stack developer with experience building web applications and digital experiences. My journey started with HTML and CSS, and has evolved to include a comprehensive skillset across the entire development stack.
+                I'm a Mern-stack developer with experience building web applications and digital experiences. My journey started with HTML and CSS, and has evolved to include a comprehensive skillset across the entire development stack.
               </p>
 
               <p className="text-gray-300 mb-8">
