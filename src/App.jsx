@@ -22,6 +22,8 @@ import {
   Database,
   Palette,
   Server,
+  Sparkles,
+  Brain,
   Download,
   Menu,
   X,
@@ -112,55 +114,155 @@ const App = () => {
   };
 
   const skills = [
+    // 🔹 Full Stack
     { name: "React", icon: <Code className="w-6 h-6" />, level: 90 },
-    { name: "Node.js", icon: <Server className="w-6 h-6" />, level: 80 },
-    { name: "Express", icon: <Server className="w-6 h-6" />, level: 75 },
-    { name: "HTML/CSS", icon: <Palette className="w-6 h-6" />, level: 95 },
-    { name: "Tailwind CSS", icon: <Palette className="w-6 h-6" />, level: 90 },
+    { name: "Node.js", icon: <Server className="w-6 h-6" />, level: 85 },
+    { name: "Express.js", icon: <Server className="w-6 h-6" />, level: 80 },
     { name: "MongoDB", icon: <Database className="w-6 h-6" />, level: 90 },
-    { name: "SQL", icon: <Database className="w-6 h-6" />, level: 75 },
+    { name: "SQL (MySQL/PostgreSQL)", icon: <Database className="w-6 h-6" />, level: 80 },
+    { name: "REST APIs", icon: <Server className="w-6 h-6" />, level: 90 },
 
-    { name: "Github", icon: <Code className="w-6 h-6" />, level: 85 },
+    // 🔹 Programming
+    { name: "JavaScript", icon: <Code className="w-6 h-6" />, level: 95 },
+    { name: "Python", icon: <Code className="w-6 h-6" />, level: 90 },
+    { name: "Data Structures & Algorithms", icon: <Code className="w-6 h-6" />, level: 80 },
+
+    // 🔹 AI / ML
+    { name: "Machine Learning", icon: <Brain className="w-6 h-6" />, level: 85 },
+    { name: "Scikit-learn", icon: <Brain className="w-6 h-6" />, level: 85 },
+    { name: "Feature Engineering", icon: <Brain className="w-6 h-6" />, level: 85 },
+    { name: "Model Evaluation & Tuning", icon: <Brain className="w-6 h-6" />, level: 80 },
+
+    // 🔹 Deep Learning
+    { name: "Deep Learning", icon: <Brain className="w-6 h-6" />, level: 80 },
+    { name: "TensorFlow", icon: <Brain className="w-6 h-6" />, level: 75 },
+    { name: "Neural Networks (ANN)", icon: <Brain className="w-6 h-6" />, level: 80 },
+
+    // 🔹 Generative AI
+    { name: "Generative AI", icon: <Sparkles className="w-6 h-6" />, level: 90 },
+    { name: "LLMs (GPT, Gemini)", icon: <Sparkles className="w-6 h-6" />, level: 90 },
+    { name: "Prompt Engineering", icon: <Sparkles className="w-6 h-6" />, level: 90 },
+    { name: "LangChain", icon: <Sparkles className="w-6 h-6" />, level: 85 },
+    { name: "RAG (Retrieval-Augmented Generation)", icon: <Sparkles className="w-6 h-6" />, level: 85 },
+    { name: "Vector Databases (FAISS)", icon: <Database className="w-6 h-6" />, level: 80 },
+    { name: "AI Chatbot Development", icon: <Sparkles className="w-6 h-6" />, level: 90 },
   ];
+
   const additionalSkill = [
-    'JavaScript', 'OOPS', 'DBMS', 'Operating System', 'Computer Network', 'Figma',
-    'Python', 'JAVA', 'Problem-solving,', 'Communication', 'Material UI',
-    'Responsive Design', 'Progressive Web Apps', 'WebSockets',
-    'Leadership', 'Adaptability,', 'Performance Optimization'
+    "HTML/CSS",
+    "Tailwind CSS",
+    "Pandas",
+    "NumPy",
+    "Matplotlib / Seaborn",
+    "Git & GitHub",
+    "Postman",
+    "Streamlit",
+
+    // Concepts
+    "OOPs",
+    "DBMS",
+    "Operating Systems",
+    "Computer Networks",
+
+    // Frontend extras
+    "Responsive Design",
+    "Material UI",
+
+    // Advanced Web
+    "WebSockets",
+    "Progressive Web Apps",
+    "Performance Optimization",
+
+    // Soft Skills
+    "Communication",
+    "Leadership",
+    "Adaptability"
   ];
 
   const projects = [
+
     {
       id: 1,
+      title: "House Price Prediction System",
+      description:
+        "An end-to-end Machine Learning project that predicts house prices using real estate data. Includes data cleaning, feature engineering, outlier removal, and a tuned Random Forest model deployed via Streamlit.",
+      tags: [
+        "Machine Learning",
+        "Random Forest",
+        "Scikit-learn",
+        "Pandas",
+        "Streamlit",
+        "Feature Engineering",
+      ],
+      image: "houseprice.png",
+      github: "https://github.com/adarshbhagatjii/house_price_prediction",
+      live: "https://housepriceprediction-h8adj2a8hxhyrfyubuvndv.streamlit.app/",
+    },
+    {
+      id: 2,
+      title: "Heart Disease Prediction System",
+      description:
+        "An AI-powered healthcare application that predicts heart disease risk with probability scores. Features patient insights, visualization dashboard, recommendations, and downloadable reports.",
+      tags: [
+        "Machine Learning",
+        "Healthcare AI",
+        "Streamlit",
+        "Data Visualization",
+        "Scikit-learn",
+      ],
+      image: "heartdisease.png",
+      github: "https://github.com/adarshbhagatjii/heart-disease-prediction",
+      live: "https://heart-disease-prediction-by-ab.streamlit.app/",
+    },
+    {
+      id: 3,
+      title: "Customer Segmentation Web App",
+      description:
+        "A clustering-based ML application that segments customers using K-Means. Includes dataset upload, preprocessing, PCA visualization, and interactive dashboard with insights.",
+      tags: [
+        "K-Means Clustering",
+        "Unsupervised Learning",
+        "PCA",
+        "Streamlit",
+        "Data Analysis",
+      ],
+      image: "customersegmentation.png",
+      github: "https://github.com/adarshbhagatjii/customer-segmentation",
+      live: "https://customer-segmentation-0.streamlit.app/",
+    },
+    {
+      id: 4,
       title: "Foodie Hub",
       description:
-        "A full-stack food ordering web app allowing users to browse restaurants, view menus, manage carts, and place orders via Razorpay or COD. Integrated live location-based address autofill and JWT authentication.",
-      tags: ["Node.js", "React", "Redux Store", "Tailwind CSS", "Mongo DB"],
+        "A full-stack food ordering web app allowing users to browse restaurants, view menus, manage carts, and place orders via Razorpay or COD. Includes live location-based address autofill and JWT authentication.",
+      tags: ["Node.js", "React", "Redux", "Tailwind CSS", "MongoDB"],
       image: "foodiehubimg.png",
       github: "https://github.com/adarshbhagatjii/myRestro-frontend",
       live: "https://foodie-hub-sigma.vercel.app/",
     },
     {
-      id: 2,
+      id: 5,
       title: "Dev Meetup",
       description:
-        " A React.js web application designed for organizing and managing developer meetups. It features user authentication, profile management, meetup requests, and real-time notifications using Redux Toolkit and Axios. Built with Vite for optimized performance and styled with Tailwind CSS.",
+        "A React.js web app for organizing developer meetups with authentication, profile management, meetup requests, and real-time notifications using Redux Toolkit and Axios.",
       tags: ["React", "Node.js", "MongoDB", "Redux", "Tailwind CSS", "WebSocket"],
-      image:
-        "devmeetup.png",
-      github: "https://dev-meetup-client.vercel.apphttps://github.com/adarshbhagatjii/devMeetup/",
+      image: "devmeetup.png",
+      github: "https://github.com/adarshbhagatjii/devMeetup/",
       live: "https://dev-meetup-client.vercel.app/",
     },
     {
-      id: 3,
+      id: 6,
       title: "E-Commerce",
       description:
-        "Developed a dynamic e-commerce website using React, allowing users to easily add and delete products. The platform features a responsive design for optimal user experience across devices. Additionally, implemented a product rating system to facilitate user feedback and engagement.",
-      tags: ["React.js", "Tailwindcss", "JavaScript", "Redux", "React Router"],
-      image: "https://images.unsplash.com/photo-1654861577468-dd7a0c2fcbfa?q=80&w=838&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "A dynamic e-commerce platform with product management, responsive UI, and rating system to enhance user engagement and shopping experience.",
+      tags: ["React.js", "Tailwind CSS", "JavaScript", "Redux", "React Router"],
+      image:
+        "https://images.unsplash.com/photo-1654861577468-dd7a0c2fcbfa?q=80&w=838&auto=format&fit=crop",
       github: "https://github.com/adarshbhagatjii/online-store",
       live: "",
     },
+
+
   ];
   const certifications = [
     {
@@ -309,7 +411,7 @@ const App = () => {
                 className="inline-block mb-2 px-4 py-1 rounded-full bg-blue-900/50 text-blue-300 text-sm font-medium"
                 variants={itemVariants}
               >
-                Mern Stack Developer
+                AI/ML Engineer | GenAI Developer
               </motion.span>
 
               <motion.h1
@@ -327,10 +429,11 @@ const App = () => {
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold">
                   <Typewriter
                     words={[
-                      'Frontend Developer',
-                      'React Specialist',
-                      'Backend Developer',
-                      'Mern Stack Developer',
+                      'AI/ML Engineer',
+                      'GenAI Developer',
+                      'Machine Learning Enthusiast',
+                      'Deep Learning Practitioner',
+                      'MERN Stack Developer',
                       'Problem Solver'
                     ]}
                     loop={0}
@@ -342,7 +445,7 @@ const App = () => {
                   />
                 </span>
                 <br className="hidden md:block" />
-                crafting beautiful web experiences.
+                building intelligent systems & scalable web apps.
               </motion.h2>
 
               <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>
@@ -419,7 +522,7 @@ const App = () => {
             <span className="inline-block px-3 py-1 rounded-full bg-blue-900/50 text-blue-300 text-lg font-medium mb-4">
               About Me
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Passionate Developer & Problem Solver</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">AI/ML Engineer & Full Stack Developer</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -446,7 +549,7 @@ const App = () => {
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-blue-400">Fresher</p>
+                  <p className="text-3xl font-bold text-blue-400">AI/ML Fresher</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -459,15 +562,19 @@ const App = () => {
               transition={{ delay: 0.2 }}
             >
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Creating digital solutions with passion & innovation
+                Building intelligent systems with AI & scalable web solutions
               </h3>
 
               <p className="text-gray-300 mb-6">
-                I'm a Mern-stack developer with experience building web applications and digital experiences. My journey started with HTML and CSS, and has evolved to include a comprehensive skillset across the entire development stack.
+                I'm an AI/ML Engineer and Full Stack Developer passionate about building intelligent systems using Generative AI and modern web technologies. My journey started with web development and has evolved into creating AI-powered applications using Large Language Models and real-world data.
+              </p>
+
+              <p className="text-gray-300 mb-6">
+                I specialize in Generative AI, working with LLMs like GPT and Gemini, and building advanced solutions using Prompt Engineering, LangChain, and RAG (Retrieval-Augmented Generation) pipelines. I have hands-on experience with Vector Databases like FAISS and developing intelligent AI chatbots capable of real-time interaction and contextual understanding.
               </p>
 
               <p className="text-gray-300 mb-8">
-                I specialize in creating responsive, accessible, and performant applications using modern technologies like React, Node.js, and cloud services. My passion lies in solving complex problems with clean, maintainable code and delivering exceptional user experiences.
+                Along with AI, I build scalable full-stack applications using React, Node.js, and MongoDB. My projects combine Machine Learning with production-ready systems, delivering impactful solutions such as predictive models and AI-driven applications.
               </p>
 
               {/* Skills grid */}
@@ -487,7 +594,7 @@ const App = () => {
               </div>
 
               <a
-                href="https://drive.google.com/file/d/1lhae5Oh_bN3qsfLxjx_kZ8sbH5e-hHUR/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1QVSTpPe4mGNifO_KikOld8B5prSlYsWt/view?usp=sharing"
                 className="inline-flex items-center px-6 py-3  bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
                 target="_blank"
                 rel="noopener noreferrer"
