@@ -180,9 +180,27 @@ const App = () => {
   ];
 
   const projects = [
-
     {
-      id: 1,
+  id: 1,
+  title: "ResumeIQ: AI-Powered ATS Resume Analyzer",
+  description:
+    "An AI-powered ATS Resume Analyzer that evaluates resumes against job descriptions using LLM + RAG architecture. Features include resume scoring, job match analysis, memory-enabled conversational AI, and intelligent career suggestions.",
+  tags: [
+    "Generative AI",
+    "LangChain",
+    "Groq LLM",
+    "FAISS",
+    "RAG",
+    "Streamlit",
+    "NLP",
+    "Machine Learning"
+  ],
+  image: "atsresume.png",
+  github: "https://github.com/adarshbhagatjii/Ats-resume-analyzer",
+  live: "https://ats-resumee-analyzer.streamlit.app/",
+}
+    {
+      id: 2,
       title: "House Price Prediction System",
       description:
         "An end-to-end Machine Learning project that predicts house prices using real estate data. Includes data cleaning, feature engineering, outlier removal, and a tuned Random Forest model deployed via Streamlit.",
@@ -199,7 +217,7 @@ const App = () => {
       live: "https://housepriceprediction-h8adj2a8hxhyrfyubuvndv.streamlit.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Heart Disease Prediction System",
       description:
         "An AI-powered healthcare application that predicts heart disease risk with probability scores. Features patient insights, visualization dashboard, recommendations, and downloadable reports.",
@@ -215,7 +233,7 @@ const App = () => {
       live: "https://heart-disease-prediction-by-ab.streamlit.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Customer Segmentation Web App",
       description:
         "A clustering-based ML application that segments customers using K-Means. Includes dataset upload, preprocessing, PCA visualization, and interactive dashboard with insights.",
@@ -230,8 +248,9 @@ const App = () => {
       github: "https://github.com/adarshbhagatjii/customer-segmentation",
       live: "https://customer-segmentation-0.streamlit.app/",
     },
+    
     {
-      id: 4,
+      id: 5,
       title: "Foodie Hub",
       description:
         "A full-stack food ordering web app allowing users to browse restaurants, view menus, manage carts, and place orders via Razorpay or COD. Includes live location-based address autofill and JWT authentication.",
@@ -241,7 +260,7 @@ const App = () => {
       live: "https://foodie-hub-sigma.vercel.app/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Dev Meetup",
       description:
         "A React.js web app for organizing developer meetups with authentication, profile management, meetup requests, and real-time notifications using Redux Toolkit and Axios.",
@@ -250,17 +269,7 @@ const App = () => {
       github: "https://github.com/adarshbhagatjii/devMeetup/",
       live: "https://dev-meetup-client.vercel.app/",
     },
-    {
-      id: 6,
-      title: "E-Commerce",
-      description:
-        "A dynamic e-commerce platform with product management, responsive UI, and rating system to enhance user engagement and shopping experience.",
-      tags: ["React.js", "Tailwind CSS", "JavaScript", "Redux", "React Router"],
-      image:
-        "https://images.unsplash.com/photo-1654861577468-dd7a0c2fcbfa?q=80&w=838&auto=format&fit=crop",
-      github: "https://github.com/adarshbhagatjii/online-store",
-      live: "",
-    },
+    
 
 
   ];
