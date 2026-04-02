@@ -198,7 +198,7 @@ const App = () => {
   image: "atsresume.png",
   github: "https://github.com/adarshbhagatjii/Ats-resume-analyzer",
   live: "https://ats-resumee-analyzer.streamlit.app/",
-}
+},
     {
       id: 2,
       title: "House Price Prediction System",
