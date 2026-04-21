@@ -200,7 +200,67 @@ const App = () => {
   live: "https://ats-resumee-analyzer.streamlit.app/",
 },
     {
-      id: 2,
+  id: 2,
+  title: "StudyForge AI: Multi-LLM Powered Learning & Career Assistant",
+  description:
+    "Developed a modular AI platform using Streamlit and LangChain integrating multiple LLMs (OpenAI, Gemini, Groq, HuggingFace) to deliver intelligent student support. Implemented features including a context-aware chatbot with memory, ATS resume analyzer with keyword matching and scoring, coding assistant for multi-language problem solving, research automation tool, and AI-driven notes generator. Designed a scalable utility-based architecture with embeddings, PDF parsing, and session-based state management.",
+  tags: [
+    "Generative AI",
+    "LangChain",
+    "LLM Integration",
+    "Streamlit",
+    "NLP",
+    "Machine Learning",
+    "Embeddings",
+    "PDF Parsing",
+    "ATS Optimization"
+  ],
+  image: "studyforageai.png",
+  github: "https://github.com/adarshbhagatjii/Study-Forage-Ai",
+  live: "https://study-forage-ai.streamlit.app/",
+},
+    {
+  id: 3,
+  title: "Smart Study AI: LangGraph-Based AI Tutor",
+  description:
+    "A LangGraph-based AI learning assistant that converts topics and PDFs into structured study material using LLM + RAG pipelines. Implements stateful workflow orchestration for summarization, notes generation, and quiz creation, along with a memory-enabled conversational chatbot and PDF export functionality.",
+  tags: [
+    "Generative AI",
+    "LangGraph",
+    "LangChain",
+    "Groq API",
+    "LLaMA 3",
+    "FAISS",
+    "RAG",
+    "Streamlit",
+    "NLP"
+  ],
+  image: "smartstudyai.png",
+  github: "https://github.com/adarshbhagatjii/smart-study-ai",
+  live: "https://smart-study-gen-ai.streamlit.app/",
+},
+    
+    {
+  id: 4,
+  title: "Spider AI: Role-Based Intelligent Assistant",
+  description:
+    "A role-driven AI assistant built using LLMs that dynamically adapts its behavior based on user-selected roles such as Teacher, Interview Coach, Debugger, and Analyst. Powered by Groq (LLaMA 3.3 70B) and LangChain, it delivers fast, structured, and context-aware responses with session-based memory and a clean Streamlit UI.",
+  tags: [
+    "Generative AI",
+    "LangChain",
+    "Groq LLM",
+    "LLM",
+    "Prompt Engineering",
+    "Streamlit",
+    "Chatbot",
+    "AI Assistant"
+  ],
+  image: "spiderai.png",
+  github: "https://github.com/adarshbhagatjii/Spider-ai-chatbot-assistant",
+  live: "https://spider-ai-chatbot-assistant.streamlit.app/"
+},
+    {
+      id: 5,
       title: "House Price Prediction System",
       description:
         "An end-to-end Machine Learning project that predicts house prices using real estate data. Includes data cleaning, feature engineering, outlier removal, and a tuned Random Forest model deployed via Streamlit.",
@@ -217,7 +277,7 @@ const App = () => {
       live: "https://housepriceprediction-h8adj2a8hxhyrfyubuvndv.streamlit.app/",
     },
     {
-      id: 3,
+      id: 6,
       title: "Heart Disease Prediction System",
       description:
         "An AI-powered healthcare application that predicts heart disease risk with probability scores. Features patient insights, visualization dashboard, recommendations, and downloadable reports.",
@@ -233,7 +293,7 @@ const App = () => {
       live: "https://heart-disease-prediction-by-ab.streamlit.app/",
     },
     {
-      id: 4,
+      id: 7,
       title: "Customer Segmentation Web App",
       description:
         "A clustering-based ML application that segments customers using K-Means. Includes dataset upload, preprocessing, PCA visualization, and interactive dashboard with insights.",
@@ -250,7 +310,7 @@ const App = () => {
     },
     
     {
-      id: 5,
+      id: 8,
       title: "Foodie Hub",
       description:
         "A full-stack food ordering web app allowing users to browse restaurants, view menus, manage carts, and place orders via Razorpay or COD. Includes live location-based address autofill and JWT authentication.",
@@ -260,7 +320,7 @@ const App = () => {
       live: "https://foodie-hub-sigma.vercel.app/",
     },
     {
-      id: 6,
+      id: 9,
       title: "Dev Meetup",
       description:
         "A React.js web app for organizing developer meetups with authentication, profile management, meetup requests, and real-time notifications using Redux Toolkit and Axios.",
